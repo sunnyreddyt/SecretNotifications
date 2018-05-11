@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6f7d7e"
+    android:orientation="vertical">
+    <!-- ace7ec-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:paddingTop="@dimen/_20sdp"
+            android:text="Grab Offers By Enrolling"
+            android:textColor="#000000"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_20sdp"
+            android:text="* Conditions apply"
+            android:textColor="#000000"
+            android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="0.1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/flipkart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/amazon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="0.1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/myntra" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/jabong" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0.1dp"
+            android:background="#ffffff"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/userNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Enroll User"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12sdp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/getAllNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:text="Get Notifications"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/uploadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:text="Upload"
+        android:visibility="gone" />
+
+</RelativeLayout>
